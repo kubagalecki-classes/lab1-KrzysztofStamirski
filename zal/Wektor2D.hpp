@@ -25,7 +25,7 @@ class Wektor2D
      return Wektor2D(v1.x + v2.x, v1.y + v2.y);
    }
    friend double operator*(Wektor2D& v1, Wektor2D& v2){
-     return v1.x*v2.x+v1.y*v2.y;
+     return v1.x * v2.x + v1.y * v2.y;
    }
    double x;
    double y;
