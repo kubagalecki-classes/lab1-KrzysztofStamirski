@@ -16,12 +16,12 @@ class Wektor2D
    double getY(){
      return y;
    }
-   Wektor 2D(double nx, double ny) {
+   Wektor2D(double nx, double ny) {
      x=nx;
      y=ny;
    }
 
-   friend Wektor2D operator+(Wektor2D& v1, Wektor 2D& v2){
+   friend Wektor2D operator+(Wektor2D& v1, Wektor2D& v2){
      return Wektor2D(v1.x + v2.x, v1.y + v2.y);
    }
    friend double operator*(Wektor2D& v1, Wektor2D& v2){
