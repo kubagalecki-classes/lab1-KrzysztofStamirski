@@ -4,7 +4,20 @@ using namespace std;
 
 struct Wektor2D
 {
-    Wektor2D(){x=}
+    Wektor2D()
+    {
+        x = 5.;
+        y = 6.;
+    }
+
+    Wektor2D(double X = 1, double Y = 1)
+    {
+
+        x = X;
+        y = Y;
+    }
+
+    ~Wektor2D() { cout << "umieram2D" << x << ';' << y << '\n'; }
     void   printxy() { std::cout << x << ';' << y << '\n'; }
     double x, y;
     double norm() { return sqrt(x * x + y * y); }
@@ -12,11 +25,12 @@ struct Wektor2D
 
 int main()
 {
+    // Wektor2D v1;
+    // v1.x = 5;
+    // v1.y = 6;
+    // v1.printxy();
+    // cout << v1.norm();
     Wektor2D v1;
-    v1.x = 5;
-    v1.y = 6;
-    v1.printxy();
-    cout << v1.norm();
 }
 
 /*
