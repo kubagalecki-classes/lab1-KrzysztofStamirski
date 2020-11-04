@@ -1,7 +1,7 @@
 class Wektor2D
 {
    public:
-   Wektor2D(){x=0., y=0.;}
+   Wektor2D(){x=0.; y=0.;}
 
 
    void setX(double nx){
